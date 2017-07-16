@@ -1,4 +1,4 @@
-# Head
+# 1.0.0
 
 -   Use `stylelint@8`.
 
