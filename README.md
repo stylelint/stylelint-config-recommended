@@ -1,5 +1,7 @@
 # stylelint-config-recommended
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/stylelint/stylelint-config-recommended.svg)](https://greenkeeper.io/)
+
 [![NPM version](http://img.shields.io/npm/v/stylelint-config-recommended.svg)](https://www.npmjs.org/package/stylelint-config-recommended) [![Build Status](https://travis-ci.org/stylelint/stylelint-config-recommended.svg?branch=master)](https://travis-ci.org/stylelint/stylelint-config-recommended) [![Build status](https://ci.appveyor.com/api/projects/status/o8rfhyax6n7bjnlt/branch/master?svg=true)](https://ci.appveyor.com/project/stylelint/stylelint-config-recommended/branch/master)
 
 > The recommended shareable config for stylelint.
