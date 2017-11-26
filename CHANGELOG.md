@@ -1,4 +1,4 @@
-# Head
+# 2.0.0
 
 -   Removed: `declaration-block-no-redundant-longhand-properties` rule.
 -   Removed: `shorthand-property-no-redundant-values` rule.
