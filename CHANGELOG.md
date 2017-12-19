@@ -1,3 +1,7 @@
+# 2.0.1
+
+-   Removed: `declaration-block-no-redundant-longhand-properties` rule. This time it actually removed.
+
 # 2.0.0
 
 -   Removed: `declaration-block-no-redundant-longhand-properties` rule.
