@@ -32,6 +32,14 @@ If you've globally installed `stylelint-config-recommended` using the `-g` flag,
 }
 ```
 
+Since [stylelint 9.7.0](https://github.com/stylelint/stylelint/blob/9.7.0/CHANGELOG.md#970), you can simply use the globally installed configuration name instead of the absolute path:
+
+```json
+{
+  "extends": "stylelint-config-recommended"
+}
+```
+
 ### Extending the config
 
 Simply add a `"rules"` key to your config, then add your overrides and additions there.
