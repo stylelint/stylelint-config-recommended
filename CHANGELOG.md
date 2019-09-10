@@ -1,3 +1,8 @@
+# 3.0.0
+
+-   Added: `function-calc-no-invalid` rule.
+-   Removed: `stylelint` < 10.1.0 from peer dependencies. stylelint@10.1.0+ is required now.
+
 # 2.2.0
 
 -   Added: `stylelint@10` to peer dependency range.
