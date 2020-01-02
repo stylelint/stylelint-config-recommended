@@ -1,17 +1,13 @@
 # stylelint-config-recommended
 
-[![NPM version](http://img.shields.io/npm/v/stylelint-config-recommended.svg)](https://www.npmjs.org/package/stylelint-config-recommended) [![Build Status](https://travis-ci.com/stylelint/stylelint-config-recommended.svg?branch=master)](https://travis-ci.com/stylelint/stylelint-config-recommended) [![Build status](https://ci.appveyor.com/api/projects/status/b63jx3nxiegbcbt2/branch/master?svg=true)](https://ci.appveyor.com/project/stylelint/stylelint-config-recommended/branch/master)
-
-> The recommended shareable config for stylelint.
-
-It turns on all the [_possible errors_](https://github.com/stylelint/stylelint/blob/master/docs/user-guide/rules.md#possible-errors) rules within stylelint.
-
-Use it as is or as a foundation for your own config.
+Recommended [Stylelint](https://github.com/stylelint/stylelint) configuration for css/scss projects
 
 ## Installation
 
+Install this package and [stylelint](https://github.com/stylelint/stylelint) package on your project
+
 ```bash
-npm install stylelint-config-recommended --save-dev
+npm install stylelint @coara/stylelint-config --D
 ```
 
 ## Usage
@@ -20,23 +16,7 @@ If you've installed `stylelint-config-recommended` locally within your project, 
 
 ```json
 {
-  "extends": "stylelint-config-recommended"
-}
-```
-
-If you've globally installed `stylelint-config-recommended` using the `-g` flag, then you'll need to use the absolute path to `stylelint-config-recommended` in your config e.g.
-
-```json
-{
-  "extends": "/absolute/path/to/stylelint-config-recommended"
-}
-```
-
-Since [stylelint 9.7.0](https://github.com/stylelint/stylelint/blob/9.7.0/CHANGELOG.md#970), you can simply use the globally installed configuration name instead of the absolute path:
-
-```json
-{
-  "extends": "stylelint-config-recommended"
+  "extends": "@coara/stylelint-config"
 }
 ```
 
@@ -48,19 +28,20 @@ For example, to change the `at-rule-no-unknown` rule to use its `ignoreAtRules` 
 
 ```json
 {
-  "extends": "stylelint-config-recommended",
+  "extends": "@coara/stylelint-config",
   "rules": {
-    "at-rule-no-unknown": [ true, {
-      "ignoreAtRules": [
-        "extends"
-      ]
-    }],
+    "at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": ["extends"]
+      }
+    ],
     "block-no-empty": null,
     "unit-whitelist": ["em", "rem", "s"]
   }
 }
 ```
 
-## [Changelog](CHANGELOG.md)
+---
 
-## [License](LICENSE)
+Package powered by [coara TM](https://coara.co)
