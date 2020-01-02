@@ -2,7 +2,12 @@
 
 module.exports = {
   rules: {
-    "at-rule-no-unknown": true,
+    "at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": ["function", "if", "each", "include", "mixin"]
+      }
+    ],
     "block-no-empty": true,
     "color-no-invalid-hex": true,
     "comment-no-empty": true,
@@ -28,9 +33,16 @@ module.exports = {
     "no-invalid-double-slash-comments": true,
     "property-no-unknown": true,
     "selector-pseudo-class-no-unknown": true,
-    "selector-pseudo-element-no-unknown": true,
-    "selector-type-no-unknown": true,
+    "selector-pseudo-element-no-unknown": [
+      true,
+      {
+        "ignorePseudoElements": ["ng-deep", "host"]
+      }
+    ],
+    "selector-type-no-unknown": [true, { "ignoreTypes": ["/^[a-zA-Z]([a-zA-Z0-9]*-[a-zA-Z0-9]+)+/"] }],
     "string-no-newline": true,
-    "unit-no-unknown": true
+    "unit-no-unknown": true,
+    
+  }
   }
 };
