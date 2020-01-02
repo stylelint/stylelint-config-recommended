@@ -1,6 +1,6 @@
 {
   "name": "@coara/stylelint-config",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Recommended shareable config for stylelint",
   "keywords": [
     "stylelint",

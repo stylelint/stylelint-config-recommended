@@ -5,7 +5,7 @@ module.exports = {
     "at-rule-no-unknown": [
       true,
       {
-        "ignoreAtRules": ["function", "if", "each", "include", "mixin"]
+        ignoreAtRules: ["function", "if", "each", "include", "mixin"]
       }
     ],
     "block-no-empty": true,
@@ -36,13 +36,14 @@ module.exports = {
     "selector-pseudo-element-no-unknown": [
       true,
       {
-        "ignorePseudoElements": ["ng-deep", "host"]
+        ignorePseudoElements: ["ng-deep", "host"]
       }
     ],
-    "selector-type-no-unknown": [true, { "ignoreTypes": ["/^[a-zA-Z]([a-zA-Z0-9]*-[a-zA-Z0-9]+)+/"] }],
+    "selector-type-no-unknown": [
+      true,
+      { ignoreTypes: ["/^[a-zA-Z]([a-zA-Z0-9]*-[a-zA-Z0-9]+)+/"] }
+    ],
     "string-no-newline": true,
-    "unit-no-unknown": true,
-    
-  }
+    "unit-no-unknown": true
   }
 };
