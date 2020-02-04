@@ -4,7 +4,7 @@
 
 > The recommended shareable config for stylelint.
 
-It turns on all the [_possible errors_](https://github.com/stylelint/stylelint/blob/master/docs/user-guide/rules.md#possible-errors) rules within stylelint.
+It turns on all the [_possible errors_](https://stylelint.io/user-guide/rules#possible-errors) rules within stylelint.
 
 Use it as is or as a foundation for your own config.
 
