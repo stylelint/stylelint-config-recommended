@@ -29,6 +29,7 @@
     "prettier": "^2.0.2",
     "remark-cli": "^8.0.0",
     "remark-preset-lint-recommended": "^4.0.0",
+    "remark-preset-prettier": "^0.4.0",
     "stylelint": "^13.2.0"
   },
   "peerDependencies": {
@@ -54,7 +55,8 @@
   },
   "remarkConfig": {
     "plugins": [
-      "preset-lint-recommended"
+      "preset-lint-recommended",
+      "remark-preset-prettier"
     ]
   },
   "husky": {
