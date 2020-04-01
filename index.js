@@ -9,8 +9,8 @@ module.exports = {
     "declaration-block-no-duplicate-properties": [
       true,
       {
-        ignore: ["consecutive-duplicates-with-different-values"]
-      }
+        ignore: ["consecutive-duplicates-with-different-values"],
+      },
     ],
     "declaration-block-no-shorthand-property-overrides": true,
     "font-family-no-duplicate-names": true,
@@ -31,6 +31,6 @@ module.exports = {
     "selector-pseudo-element-no-unknown": true,
     "selector-type-no-unknown": true,
     "string-no-newline": true,
-    "unit-no-unknown": true
-  }
+    "unit-no-unknown": true,
+  },
 };

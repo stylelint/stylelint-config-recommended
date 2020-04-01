@@ -1,6 +1,6 @@
 # stylelint-config-recommended
 
-[![NPM version](http://img.shields.io/npm/v/stylelint-config-recommended.svg)](https://www.npmjs.org/package/stylelint-config-recommended) [![Build Status](https://travis-ci.com/stylelint/stylelint-config-recommended.svg?branch=master)](https://travis-ci.com/stylelint/stylelint-config-recommended) [![Build status](https://ci.appveyor.com/api/projects/status/b63jx3nxiegbcbt2/branch/master?svg=true)](https://ci.appveyor.com/project/stylelint/stylelint-config-recommended/branch/master)
+[![NPM version](https://img.shields.io/npm/v/stylelint-config-recommended.svg)](https://www.npmjs.org/package/stylelint-config-recommended) [![Build Status](https://github.com/stylelint/stylelint-config-recommended/workflows/CI/badge.svg)](https://github.com/stylelint/stylelint-config-recommended/actions)
 
 > The recommended shareable config for stylelint.
 
@@ -50,11 +50,12 @@ For example, to change the `at-rule-no-unknown` rule to use its `ignoreAtRules` 
 {
   "extends": "stylelint-config-recommended",
   "rules": {
-    "at-rule-no-unknown": [ true, {
-      "ignoreAtRules": [
-        "extends"
-      ]
-    }],
+    "at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": ["extends"]
+      }
+    ],
     "block-no-empty": null,
     "unit-whitelist": ["em", "rem", "s"]
   }
