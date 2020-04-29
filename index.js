@@ -26,6 +26,7 @@ module.exports = {
     "keyframe-declaration-no-important": true,
     "media-feature-name-no-unknown": true,
     "no-descending-specificity": true,
+    "declaration-no-important": true,
     "no-duplicate-at-import-rules": true,
     "no-duplicate-selectors": true,
     "no-empty-source": true,
