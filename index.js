@@ -6,6 +6,7 @@ module.exports = {
 		'block-no-empty': true,
 		'color-no-invalid-hex': true,
 		'comment-no-empty': true,
+		'declaration-block-no-duplicate-custom-properties': true,
 		'declaration-block-no-duplicate-properties': [
 			true,
 			{
@@ -20,6 +21,7 @@ module.exports = {
 		'function-linear-gradient-no-nonstandard-direction': true,
 		'keyframe-declaration-no-important': true,
 		'media-feature-name-no-unknown': true,
+		'named-grid-areas-no-invalid': true,
 		'no-descending-specificity': true,
 		'no-duplicate-at-import-rules': true,
 		'no-duplicate-selectors': true,
