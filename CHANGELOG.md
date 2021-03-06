@@ -1,9 +1,15 @@
 # Changelog
 
+## Head
+
+- Removed: `stylelint` less than `13.12.0` from peer dependencies.
+- Added: `declaration-block-no-duplicate-custom-properties` rule.
+- Added: `named-grid-areas-no-invalid` rule.
+
 ## 3.0.0
 
-- Added: `function-calc-no-invalid` rule.
 - Removed: `stylelint` < 10.1.0 from peer dependencies. `stylelint@10.1.0+` is required now.
+- Added: `function-calc-no-invalid` rule.
 
 ## 2.2.0
 
