@@ -1,6 +1,6 @@
 # Changelog
 
-## Head
+## 4.0.0
 
 - Removed: `stylelint` less than `13.12.0` from peer dependencies.
 - Added: `declaration-block-no-duplicate-custom-properties` rule.
