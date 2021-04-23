@@ -31,12 +31,12 @@ module.exports = {
 		'property-no-unknown': true,
 		'selector-pseudo-class-no-unknown': true,
 		'selector-pseudo-element-no-unknown': true,
-    'selector-type-no-unknown': [
-      true,
-      {
-        ignore: ['custom-elements'],
-      },
-    ],
+		'selector-type-no-unknown': [
+			true,
+			{
+				ignore: ['custom-elements'],
+			},
+		],
 		'string-no-newline': true,
 		'unit-no-unknown': true,
 	},
