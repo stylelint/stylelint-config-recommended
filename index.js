@@ -37,10 +37,10 @@ module.exports = {
     "selector-pseudo-element-no-unknown": [
       true,
       {
-        "ignorePseudoElements": ["ng-deep", "host"]
+        "ignorePseudoElements": ["part", "ng-deep", "host"]
       }
     ],
-    "selector-type-no-unknown": [true, { "ignoreTypes": ["/^[a-zA-Z]([a-zA-Z0-9]*-[a-zA-Z0-9]+)+/"] }],
+    "selector-type-no-unknown": [true, { "ignoreTypes": ["icon", "/^[a-zA-Z]([a-zA-Z0-9]*-[a-zA-Z0-9]+)+/"] }],
     "string-no-newline": true,
     "unit-no-unknown": true
   }
