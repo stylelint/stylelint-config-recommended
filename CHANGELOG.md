@@ -1,5 +1,9 @@
 # Changelog
 
+## Head
+
+- Removed: `function-calc-no-invalid` rule.
+
 ## 5.0.0
 
 - Removed: `stylelint` less than `13.13.0` from peer dependencies.
