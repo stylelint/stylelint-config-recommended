@@ -7,10 +7,7 @@
     "stylelint-config",
     "recommended"
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/stylelint/stylelint-config-recommended.git"
-  },
+  "repository": "stylelint/stylelint-config-recommended",
   "license": "MIT",
   "author": "Stylelint",
   "main": "index.js",
@@ -59,9 +56,9 @@
     "npm-run-all": "^4.1.5",
     "prettier": "^2.3.2",
     "remark-cli": "^10.0.0",
-    "stylelint": "^14.0.0-0"
+    "stylelint": "^14.0.0"
   },
   "peerDependencies": {
-    "stylelint": "^14.0.0-0"
+    "stylelint": "^14.0.0"
   }
 }
