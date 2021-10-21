@@ -1,8 +1,10 @@
 # Changelog
 
-## Head
+## 6.0.0
 
+- Removed: `stylelint` less than `14.0.0` from peer dependencies.
 - Removed: `function-calc-no-invalid` rule.
+- Added: `custom-property-no-missing-var-function` rule.
 
 ## 5.0.0
 
