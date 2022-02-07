@@ -1,5 +1,10 @@
 # Changelog
 
+## 7.0.0
+
+- Removed: `stylelint` less than `14.4.0` from peer dependencies.
+- Added: `function-no-unknown` rule.
+
 ## 6.0.0
 
 - Removed: `stylelint` less than `14.0.0` from peer dependencies.
