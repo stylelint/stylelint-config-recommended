@@ -19,6 +19,7 @@ module.exports = {
 		'font-family-no-missing-generic-family-keyword': true,
 		'function-calc-no-unspaced-operator': true,
 		'function-linear-gradient-no-nonstandard-direction': true,
+		'function-no-unknown': true,
 		'keyframe-declaration-no-important': true,
 		'media-feature-name-no-unknown': true,
 		'named-grid-areas-no-invalid': true,
