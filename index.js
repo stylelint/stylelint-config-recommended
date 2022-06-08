@@ -21,6 +21,7 @@ module.exports = {
 		'function-linear-gradient-no-nonstandard-direction': true,
 		'function-no-unknown': true,
 		'keyframe-declaration-no-important': true,
+		'keyframe-block-no-duplicate-selectors': true,
 		'media-feature-name-no-unknown': true,
 		'named-grid-areas-no-invalid': true,
 		'no-descending-specificity': true,

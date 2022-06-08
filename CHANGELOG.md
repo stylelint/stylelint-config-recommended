@@ -1,5 +1,10 @@
 # Changelog
 
+## Head
+
+- Removed: `stylelint` less than `14.8.0` from peer dependencies.
+- Added: `keyframe-block-no-duplicate-selectors` rule.
+
 ## 7.0.0
 
 - Removed: `stylelint` less than `14.4.0` from peer dependencies.
