@@ -1,5 +1,10 @@
 # Changelog
 
+## 9.0.0
+
+- Removed: `stylelint` less than `14.10.0` from peer dependencies.
+- Added: `annotation-no-unknown` rule.
+
 ## 8.0.0
 
 - Removed: `stylelint` less than `14.8.0` from peer dependencies.
