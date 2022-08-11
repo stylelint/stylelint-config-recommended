@@ -2,6 +2,7 @@
 
 module.exports = {
 	rules: {
+		'annotation-no-unknown': true,
 		'at-rule-no-unknown': true,
 		'block-no-empty': true,
 		'color-no-invalid-hex': true,
