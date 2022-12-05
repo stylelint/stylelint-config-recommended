@@ -4,7 +4,7 @@
 
 > The recommended shareable config for Stylelint.
 
-It turns on most the Stylelint rules that help you [_avoid errors_](https://stylelint.io/user-guide/rules/list/#avoid-errors).
+It turns on most of the Stylelint rules that help you [_avoid errors_](https://stylelint.io/user-guide/rules/#avoid-errors).
 
 You can use this as a foundation for your own config, but we suggest most people use our [standard config](https://www.npmjs.com/package/stylelint-config-standard) instead which extends this config and adds a few more rules to enforce common conventions.
 
