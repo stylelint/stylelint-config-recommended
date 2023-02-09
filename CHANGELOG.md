@@ -1,5 +1,9 @@
 # Changelog
 
+## 10.0.1
+
+- Removed: deprecated `no-extra-semicolons` rule.
+
 ## 10.0.0
 
 - Removed: `stylelint` less than `15.0.0` from peer dependencies.
