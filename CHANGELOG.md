@@ -1,5 +1,9 @@
 # Changelog
 
+## 10.0.0
+
+- Removed: `stylelint` less than `15.0.0` from peer dependencies.
+
 ## 9.0.0
 
 - Removed: `stylelint` less than `14.10.0` from peer dependencies.
