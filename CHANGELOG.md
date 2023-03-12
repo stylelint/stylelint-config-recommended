@@ -1,5 +1,11 @@
 # Changelog
 
+## 11.0.0
+
+- Removed: `stylelint` less than `15.3.0` from peer dependencies.
+- Added: `declaration-property-value-no-unknown` rule.
+- Added: `selector-anb-no-unmatchable` rule.
+
 ## 10.0.1
 
 - Removed: deprecated `no-extra-semicolons` rule.
