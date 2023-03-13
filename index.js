@@ -16,7 +16,6 @@ module.exports = {
 			},
 		],
 		'declaration-block-no-shorthand-property-overrides': true,
-		'declaration-property-value-no-unknown': true,
 		'font-family-no-duplicate-names': true,
 		'font-family-no-missing-generic-family-keyword': true,
 		'function-calc-no-unspaced-operator': true,
