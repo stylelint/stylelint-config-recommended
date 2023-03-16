@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-recommended",
-  "version": "10.0.1",
+  "version": "11.0.0",
   "description": "Recommended shareable config for Stylelint",
   "keywords": [
     "stylelint",
