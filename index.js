@@ -33,6 +33,7 @@ module.exports = {
 		'no-invalid-position-at-import-rule': true,
 		'no-irregular-whitespace': true,
 		'property-no-unknown': true,
+		'selector-anb-no-unmatchable': true,
 		'selector-pseudo-class-no-unknown': true,
 		'selector-pseudo-element-no-unknown': true,
 		'selector-type-no-unknown': [
