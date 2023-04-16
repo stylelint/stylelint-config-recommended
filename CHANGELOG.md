@@ -1,5 +1,10 @@
 # Changelog
 
+## 12.0.0
+
+- Removed: `stylelint` less than `15.5.0` from peer dependencies.
+- Changed: `declaration-block-no-duplicate-properties` option to `ignore: ['consecutive-duplicates-with-different-syntaxes']`.
+
 ## 11.0.0
 
 - Removed: `stylelint` less than `15.3.0` from peer dependencies.
