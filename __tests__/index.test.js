@@ -18,7 +18,7 @@ describe('flags no warnings with valid css', () => {
 	});
 
 	it('has no errors', () => {
-		expect(result.errored).toBeFalsy();
+		expect(result.errored).toBe(false);
 	});
 
 	it('flags no warnings', () => {
@@ -37,7 +37,7 @@ describe('flags warnings with invalid css', () => {
 	});
 
 	it('includes an error', () => {
-		expect(result.errored).toBeTruthy();
+		expect(result.errored).toBe(true);
 	});
 
 	it('flags one warning', () => {
