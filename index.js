@@ -12,7 +12,7 @@ module.exports = {
 		'declaration-block-no-duplicate-properties': [
 			true,
 			{
-				ignore: ['consecutive-duplicates-with-different-values'],
+				ignore: ['consecutive-duplicates-with-different-syntaxes'],
 			},
 		],
 		'declaration-block-no-shorthand-property-overrides': true,
