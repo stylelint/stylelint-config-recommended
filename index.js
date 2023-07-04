@@ -24,6 +24,7 @@ module.exports = {
 		'keyframe-block-no-duplicate-selectors': true,
 		'keyframe-declaration-no-important': true,
 		'media-feature-name-no-unknown': true,
+		'media-query-no-invalid': true,
 		'named-grid-areas-no-invalid': true,
 		'no-descending-specificity': true,
 		'no-duplicate-at-import-rules': true,
