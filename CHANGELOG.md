@@ -1,5 +1,10 @@
 # Changelog
 
+## 13.0.0
+
+- Removed: `stylelint` less than `15.10.0` from peer dependencies.
+- Added: `media-query-no-invalid` rule.
+
 ## 12.0.0
 
 - Removed: `stylelint` less than `15.5.0` from peer dependencies.
