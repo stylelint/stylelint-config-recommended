@@ -1,8 +1,6 @@
-'use strict';
-
-const config = require('../');
-const fs = require('fs');
-const stylelint = require('stylelint');
+import config from '../index.js';
+import fs from 'node:fs';
+import stylelint from 'stylelint';
 
 const validCss = fs.readFileSync('./__tests__/valid.css', 'utf-8');
 const invalidCss = fs.readFileSync('./__tests__/invalid.css', 'utf-8');

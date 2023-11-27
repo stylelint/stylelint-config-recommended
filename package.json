@@ -23,8 +23,8 @@
     "lint": "npm-run-all --parallel lint:*",
     "release": "np",
     "pretest": "npm run lint",
-    "test": "jest",
-    "watch": "jest --watch"
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "watch": "npm test --ignore-scripts -- --watch"
   },
   "lint-staged": {
     "*.js": "eslint --cache --fix",
@@ -45,6 +45,9 @@
     "plugins": [
       "@stylelint/remark-preset"
     ]
+  },
+  "jest": {
+    "testRegex": ".*\\.test\\.m?js$"
   },
   "devDependencies": {
     "@stylelint/prettier-config": "^2.0.0",
