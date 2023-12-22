@@ -1,8 +1,9 @@
-import { describe, it, beforeEach } from 'node:test';
+import { beforeEach, describe, it } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 
 import stylelint from 'stylelint';
+
 import config from '../index.js';
 
 const validCss = readFileSync('./__tests__/valid.css', 'utf-8');
