@@ -8,6 +8,16 @@
     "recommended"
   ],
   "repository": "stylelint/stylelint-config-recommended",
+  "funding": [
+    {
+      "type": "opencollective",
+      "url": "https://opencollective.com/stylelint"
+    },
+    {
+      "type": "github",
+      "url": "https://github.com/sponsors/stylelint"
+    }
+  ],
   "license": "MIT",
   "author": "Stylelint",
   "main": "index.js",
