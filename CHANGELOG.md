@@ -1,5 +1,23 @@
 # Changelog
 
+## 15.0.0
+
+This release replaces four rules with more capable ones.
+
+- Removed: `stylelint` less than `16.13.0` from peer dependencies.
+- Removed: `color-no-invalid-hex` rule.
+- Removed: `function-linear-gradient-no-nonstandard-direction` rule.
+- Removed: `function-no-unknown` rule.
+- Removed: `unit-no-unknown` rule.
+- Changed: `string-no-newline` to `{ ignore: ['at-rule-preludes', 'declaration-values'] }]`
+- Added: `at-rule-descriptor-no-unknown` rule.
+- Added: `at-rule-descriptor-value-no-unknown` rule.
+- Added: `at-rule-no-deprecated` rule.
+- Added: `at-rule-prelude-no-invalid` rule.
+- Added: `declaration-property-value-keyword-no-deprecated` rule.
+- Added: `declaration-property-value-no-unknown` rule.
+- Added: `media-feature-name-value-no-unknown` rule.
+
 ## 14.0.1
 
 - Fixed: missing `funding` field in `package.json`.
