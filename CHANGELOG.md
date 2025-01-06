@@ -9,7 +9,7 @@ This release replaces four rules with more capable ones.
 - Removed: `function-linear-gradient-no-nonstandard-direction` rule.
 - Removed: `function-no-unknown` rule.
 - Removed: `unit-no-unknown` rule.
-- Changed: `string-no-newline` to `{ ignore: ['at-rule-preludes', 'declaration-values'] }]`
+- Changed: `string-no-newline` rule option to `{ ignore: ['at-rule-preludes', 'declaration-values'] }]`.
 - Added: `at-rule-descriptor-no-unknown` rule.
 - Added: `at-rule-descriptor-value-no-unknown` rule.
 - Added: `at-rule-no-deprecated` rule.
