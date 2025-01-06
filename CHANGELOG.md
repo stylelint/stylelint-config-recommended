@@ -2,7 +2,7 @@
 
 ## 15.0.0
 
-This release replaces four rules with more capable ones.
+This release replaces four rules with broader and more capable ones that validate CSS against syntaxes defined by W3C: `at-rule-descriptor-value-no-unknown`, `at-rule-prelude-no-invalid` and `declaration-property-value-no-unknown`.
 
 - Removed: `stylelint` less than `16.13.0` from peer dependencies.
 - Removed: `color-no-invalid-hex` rule.
