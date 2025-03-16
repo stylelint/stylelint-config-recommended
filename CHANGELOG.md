@@ -1,6 +1,6 @@
 # Changelog
 
-## 16.0.0
+## Head
 
 - Removed: `stylelint` less than `16.16.0` from peer dependencies.
 - Added: `syntax-string-no-invalid` rule.
