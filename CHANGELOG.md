@@ -1,5 +1,10 @@
 # Changelog
 
+## 16.0.0
+
+- Removed: `stylelint` less than `16.16.0` from peer dependencies.
+- Added: `syntax-string-no-invalid` rule.
+
 ## 15.0.0
 
 This release replaces four rules with broader and more capable ones that validate CSS against syntaxes defined by W3C: `at-rule-descriptor-value-no-unknown`, `at-rule-prelude-no-invalid` and `declaration-property-value-no-unknown`.
