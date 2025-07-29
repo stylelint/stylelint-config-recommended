@@ -1,5 +1,13 @@
 # Changelog
 
+## 17.0.0
+
+- Removed: `stylelint` less than `16.23.0` from peer dependencies.
+- Added: `media-type-no-deprecated` rule.
+- Added: `nesting-selector-no-missing-scoping-root` rule.
+- Added: `no-invalid-position-declaration` rule.
+- Added: `property-no-deprecated` rule.
+
 ## 16.0.0
 
 - Removed: `stylelint` less than `16.16.0` from peer dependencies.
