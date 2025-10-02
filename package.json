@@ -31,7 +31,6 @@
     "lint:js": "eslint",
     "lint:md": "remark . --quiet --frail --ignore-path .gitignore",
     "lint": "npm-run-all --parallel lint:*",
-    "release": "np --no-release-draft",
     "pretest": "npm run lint",
     "test": "node --test",
     "watch": "npm test --ignore-scripts -- --watch"
