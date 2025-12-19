@@ -1,5 +1,11 @@
 # Changelog
 
+## 18.0.0
+
+- Removed: `stylelint` less than `17.0.0` from peer dependencies.
+- Removed: support for Node.js less than 20.19.0 and 22.13.0
+- Changed: module type to ESM
+
 ## 17.0.0
 
 - Removed: `stylelint` less than `16.23.0` from peer dependencies.
