@@ -1,6 +1,4 @@
-'use strict';
-
-module.exports = {
+export default {
 	rules: {
 		'annotation-no-unknown': true,
 		'at-rule-descriptor-no-unknown': true,
