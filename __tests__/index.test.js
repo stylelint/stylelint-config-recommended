@@ -1,8 +1,12 @@
-'use strict';
+import { beforeEach, describe, expect, it } from 'vitest';
 
-const config = require('../');
-const fs = require('fs');
-const stylelint = require('stylelint');
+import config from '../index.js';
+import fs from 'node:fs';
+// stylelint is a devDependency and resolves fine at runtime; from v16 it
+// publishes an ESM-only export map that eslint-plugin-node's CommonJS resolver
+// cannot follow.
+// eslint-disable-next-line node/no-missing-import
+import stylelint from 'stylelint';
 
 const validCss = fs.readFileSync('./__tests__/valid.css', 'utf-8');
 const invalidCss = fs.readFileSync('./__tests__/invalid.css', 'utf-8');
@@ -45,11 +49,14 @@ describe('flags warnings with invalid css', () => {
 	});
 
 	it('correct warning text', () => {
-		return result.then((data) =>
-			expect(data.results[0].warnings[0].text).toBe(
-				'Unexpected unknown type selector "madeup" (selector-type-no-unknown)',
-			),
-		);
+		return result.then((data) => {
+			// Not an exact match: stylelint 17 reworded this from "Unexpected
+			// unknown type selector" to "Unknown type selector", and this config
+			// supports 15 through 17. Assert the parts that identify the problem,
+			// which are the parts this config is responsible for.
+			expect(data.results[0].warnings[0].text).toContain('type selector "madeup"');
+			expect(data.results[0].warnings[0].text).toContain('(selector-type-no-unknown)');
+		});
 	});
 
 	it('correct rule flagged', () => {
@@ -71,15 +78,21 @@ describe('flags warnings with invalid css', () => {
 	});
 });
 
-describe('deprecated rules', () => {
-	const deprecatedRuleNames = Object.values(stylelint.rules)
-		.filter((rule) => rule.meta.deprecated)
-		.map((rule) => rule.ruleName);
+describe('rules stay in step with stylelint', () => {
+	// These two are what make widening the peer range safe rather than hopeful.
+	// A rule this config sets that stylelint has since deprecated, renamed or
+	// removed would otherwise sit here doing nothing and say nothing.
+	it('sets no rule stylelint marks deprecated', () => {
+		const deprecated = Object.values(stylelint.rules)
+			.filter((rule) => rule.meta && rule.meta.deprecated)
+			.map((rule) => rule.ruleName);
 
-	const testFn = deprecatedRuleNames.length === 0 ? it.skip : it;
+		expect(Object.keys(config.rules).filter((name) => deprecated.includes(name))).toEqual([]);
+	});
 
-	testFn('exclude deprecate rules', () => {
-		// eslint-disable-next-line jest/no-standalone-expect -- If not using `it` directly, false positives occur.
-		deprecatedRuleNames.map((m) => expect(Object.keys(config.rules)).not.toContain(m));
+	it('sets no rule stylelint does not have', () => {
+		const known = Object.keys(stylelint.rules);
+
+		expect(Object.keys(config.rules).filter((name) => !known.includes(name))).toEqual([]);
 	});
 });

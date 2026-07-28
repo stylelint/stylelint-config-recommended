@@ -1,5 +1,24 @@
 # Changelog
 
+## 10.1.0
+
+- Added: `stylelint` 16 and 17 to peer dependencies. The range is now
+  `^15.0.0 || ^16.0.0 || ^17.0.0`. No rule changed.
+
+  Consumers on stylelint 16 or 17 could not install this config at all — npm
+  failed the resolution outright — and were working around it with an
+  `overrides` entry. Those can now be removed.
+
+- Changed: the test suite runs on Vitest instead of Jest. stylelint is ESM-only
+  from v16 and Jest cannot link it inside its VM at any version, which is the
+  same reason stylelint itself made this move. Test-only: `files` still
+  publishes `index.js` alone, so nothing reaches consumers.
+
+- Added: two tests asserting that every rule this config sets still exists in
+  the installed stylelint and is not deprecated. That is what makes a range
+  spanning three majors a claim rather than a hope — the suite is run against
+  15.11.0, 16.26.1 and 17.14.1.
+
 ## 10.0.1
 
 - Removed: deprecated `no-extra-semicolons` rule.

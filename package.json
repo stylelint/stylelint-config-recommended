@@ -1,21 +1,21 @@
 {
   "name": "@coara/stylelint-config",
-  "version": "10.0.5",
+  "version": "10.1.0",
   "description": "Recommended shareable config for stylelint",
   "keywords": [
     "stylelint",
     "stylelint-config",
     "recommended"
   ],
-  "author": {
-    "name": "coara TM",
-    "url": "https://coara.co",
-    "email": "contact@coara.co"
-  },
-  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/coaraco/stylelint-config.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "coara TM",
+    "email": "contact@coara.co",
+    "url": "https://coara.co"
   },
   "main": "index.js",
   "files": [
@@ -30,8 +30,8 @@
     "lint": "npm-run-all --parallel lint:*",
     "release": "np",
     "pretest": "npm run lint",
-    "test": "jest",
-    "watch": "jest --watch"
+    "test": "vitest run",
+    "watch": "vitest"
   },
   "lint-staged": {
     "*.js": "eslint --cache --fix",
@@ -42,6 +42,9 @@
     "extends": [
       "stylelint"
     ],
+    "rules": {
+      "jest/no-deprecated-functions": "off"
+    },
     "globals": {
       "module": true,
       "require": true
@@ -58,15 +61,15 @@
     "eslint": "^8.33.0",
     "eslint-config-stylelint": "^17.1.0",
     "husky": "^8.0.3",
-    "jest": "^29.4.1",
     "lint-staged": "^13.1.0",
     "np": "^7.6.3",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.8.3",
     "remark-cli": "^11.0.0",
-    "stylelint": "^15.0.0"
+    "stylelint": "^17.14.1",
+    "vitest": "^4.1.10"
   },
   "peerDependencies": {
-    "stylelint": "^15.0.0"
+    "stylelint": "^15.0.0 || ^16.0.0 || ^17.0.0"
   }
 }
