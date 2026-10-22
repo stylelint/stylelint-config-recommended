@@ -1,6 +1,7 @@
 export default {
 	rules: {
 		'annotation-no-unknown': true,
+		'at-charset-rule-no-invalid': true,
 		'at-rule-descriptor-no-unknown': true,
 		'at-rule-descriptor-value-no-unknown': true,
 		'at-rule-no-deprecated': true,
@@ -41,6 +42,9 @@ export default {
 		'property-no-deprecated': true,
 		'property-no-unknown': true,
 		'selector-anb-no-unmatchable': true,
+		'selector-no-deprecated': true,
+		'selector-no-invalid': true,
+		'selector-no-unmatchable': true,
 		'selector-pseudo-class-no-unknown': true,
 		'selector-pseudo-element-no-unknown': true,
 		'selector-type-no-unknown': [
@@ -51,5 +55,6 @@ export default {
 		],
 		'string-no-newline': [true, { ignore: ['at-rule-preludes', 'declaration-values'] }],
 		'syntax-string-no-invalid': true,
+		'value-no-invalid': true,
 	},
 };
