@@ -59,10 +59,10 @@
     "npm-run-all": "^4.1.5",
     "prettier": "^3.9.9",
     "remark-cli": "^12.0.1",
-    "stylelint": "github:stylelint/stylelint#v18"
+    "stylelint": "^18.0.0-0"
   },
   "peerDependencies": {
-    "stylelint": "^17.0.0"
+    "stylelint": "^18.0.0-0"
   },
   "engines": {
     "node": ">=20.19.0"
