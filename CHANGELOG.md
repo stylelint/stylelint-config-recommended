@@ -1,5 +1,9 @@
 # Changelog
 
+## 19.1.0
+
+- Added: TypeScript types.
+
 ## 19.0.0
 
 - Removed: `stylelint` less than `18.0.0` from peer dependencies.
